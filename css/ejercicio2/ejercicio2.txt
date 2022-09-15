@@ -1,0 +1,3 @@
+p.aviso { ... } --> afecta a todos los p que tenga la clase aviso. SELECTOR DE CLASE
+p .aviso { ... } --> afecta a todos los elementos que tenga la clase aviso que esté dentro de un p (a cualquier nivel). SELECTOR DESCENDENTE
+p, .aviso { ... } --> afecta a todos los p y a todos los elementos que tenga la clase aviso. SELECTOR DE ETIQUETA Y DE CLASE

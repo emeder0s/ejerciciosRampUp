@@ -1,0 +1,2 @@
+p a span em { color: blue; }: Todo texto en cursiva que esté dentro de un span, que esté dentro de un enlace y este dentro de un p, será de color azul. 
+p, a, span, em { color: blue; }: todos los p, los enlaces, los span y el texto en cursiva será de color azul. 

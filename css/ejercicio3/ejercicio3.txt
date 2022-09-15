@@ -1,0 +1,3 @@
+p#aviso { ... } --> todos los p con identificador aviso
+p #aviso { ... } --> todos los elementos con identificador aviso que esten dentro de un p
+p, #aviso { ... } --> todos los p y todos los elementos con identificador aviso
