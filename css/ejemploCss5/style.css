@@ -1,0 +1,18 @@
+/* Se muestran de color verde todos los enlaces que tengan 
+un atributo "id", independientemente de su valor */ 
+a[id] { color: green; } 
+/* Se muestran de color amarillo todos los enlaces que tengan 
+un atributo "class" con el valor "externo" */ 
+a[class="externo"] { color: yellow; } 
+/* Se muestran de color violeta todos los enlaces que apunten 
+al sitio "http://www.ejemplo.com" */ 
+a[href="http://www.ejemplo.com"] { color: purple ; } 
+/* Se muestran de color naranja todos los enlaces que tengan un atributo "class" 
+   en el que al menos uno de sus valores sea "abajo" */ 
+a[class~="abajo"] { color: orange; } 
+/* Selecciona todos los elementos de la página cuyo atributo 
+"lang" sea igual a "en", es decir, todos los elementos en inglés */ 
+*[lang=en] { color: brown; } 
+/* Selecciona todos los elementos de la página cuyo atributo 
+"lang" empiece por "es", es decir, "es", "es-ES", "es-AR", etc. */ 
+*[lang|="es"] { color : red } 
