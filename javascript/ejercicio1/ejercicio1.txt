@@ -1,0 +1,17 @@
+1. Realiza un análisis del problema de un software que permita sumar o restar (una sóla opción por ejecución) números enteros.
+ - ENTRADA: los números con los que se va a realizar la operacón, y la operación que se quiera realizar (sumar o restar) , SALIDA: el resultado de la operación.
+
+2. Realiza un análisis del problema de un software que permita sumar y restar (ambas opciones por ejecución) números enteros.
+ - ENTRADA: los números que se vayan a sumar y restar, SALIDA: el resultado de la operación.
+
+3. Realiza un análisis del problema de un software que permita contar las cantidad de veces que aparece la letra a en una frase solicitada al usuario
+ - ENTRADA: la letra a buscar, la frase, SALIDA: el numero de veces que aparece la letra. 
+
+4. Realiza un análisis del problema de un software que permita indicar si un número entero es par o impar.
+ - ENTRADA: el número entero, SALIDA: el resultado: si es par o impar.
+
+5. Realiza un análisis del problema de un software que permita obtener el número de cifras que contiene un número entero.
+ - ENTRADA: el número entero, SALIDA: el número de cifras.
+
+6. Realiza un análisis del problema de un software que permita validar a un usuario con su contraseña, ofreciéndole N intentos (N es un número entre 1 y 5 y se le asigna a cada usuario aleatoriamente). Si falla sus intentos, debe esperar entre 5 y 20 minutos (también se decide de forma aleatoria).
+ - ENTRADA: el usuario y la contraseña, SALIDA: un mensaje (validación correcta, validación incorrecta o espera X min para loguearte)
