@@ -88,13 +88,30 @@ var piramide = ()  => {
 var diferenciaDias = ()  => {
     var date1 = window.prompt("Escribe una fecha (DD-MM): ");
     var date2 = window.prompt("Escribe otra fecha (DD-MM): ");
-
     var months= [31,28,31,30,31,30,31,31,30,31,30,31];
+    var diff = 0;
+    var days = 0;
+    var day1 = parseInt(date1.split("-")[0]);
+    var day2 = parseInt(date2.split("-")[0]);
+    var month1 = parseInt(date1.split("-")[1]);
+    var month2 = parseInt(date2.split("-")[1]);
 
-    day1 = date1.split("-")[0];
-    day2 = date2.split("-")[0];
-    month1 = date1.split("-")[1];
-    month2 =date2.split("-")[1];
-
+    if(month1!=month2){  
+        if (month1<month2){
+            days = (months[month1-1] - day1) +  day2;  
+            for(let i=month1; i<month2-1; i++){
+                diff = diff + months[i];    
+            }
+        }else{
+            days = (months[month2-1] - day2) +  day1;  
+            for(let i=month2; i<month1-1; i++){
+                diff = diff + months[i];    
+            }
+        }
+        diff = diff + days;
+    }else{
+       diff = Math.abs(day1-day2);
+    }
     
+    alert("Hay una diferencia de "+ diff + " dias");
 }
