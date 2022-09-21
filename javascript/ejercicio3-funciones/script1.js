@@ -43,8 +43,8 @@ function nurmeroMenor(){
     }    
 }
 
-//Ejercicio 2 
-function buscarLetra(){
+//Ejercicio 2 - FUNCION DE EXPRESION
+var buscarletra = function (){
     var sentence = window.prompt("Inserta una frase: ");
     var letter = window.prompt("Inserta una letra: ");
     let cont = 0;
@@ -102,8 +102,8 @@ function checkPassword(){
     }while(!validation || tries > 0)
 }
 
-//Ejercicio 5 
-function selectLetter(){
+//Ejercicio 5 - FUNCION FLECHA
+var selectLetter = () => {
     var letter = window.prompt("Escribe una letra: ");
     switch(letter){
         case "a":
@@ -120,8 +120,8 @@ function selectLetter(){
     }
 }
 
-//Ejercicio 6 
-function ordenaArray(){
+//Ejercicio 6 - FUNCION EJECUTADA INMEDIATAMENTE
+( function () {
     var array = ["anacardo","zanahoria", "banana", "manzana"];
     var aux;
     alert("Array desordenado: " +  array);
@@ -136,6 +136,6 @@ function ordenaArray(){
         }
     }
     alert("Array ordenado: " + array);
-}
+})();
 
 
