@@ -73,7 +73,14 @@ var secuencia2 = ()  => {
 var piramide = ()  => {
     var sec="";
     var lin="";
-    for(i=0; i < 5; i++){
+    do{
+        var num = parseFloat(window.prompt("Escribe un numero entero: "));
+        var validation = Number.isInteger(num);
+        if(!validation){
+            alert("OJO! Eso NO es un número ENTERO");
+        }
+    }while(!validation)
+    for(i=0; i < num; i++){
         lin="";
         for(j=0; j <= i; j++){
             lin = lin + "*";
@@ -113,5 +120,5 @@ var diferenciaDias = ()  => {
        diff = Math.abs(day1-day2);
     }
     
-    alert("Hay una diferencia de "+ diff + " dias");
+    alert("Hay una diferencia de "+ diff + " días");
 }
